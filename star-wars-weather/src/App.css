@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Star Jedi';
+  src: url('fonts/star-jedi_[allfont.net].ttf');
+}
+
+body {
+  background-image: url('backgrounds/Hoth2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  padding: 40px;
+  font-family: 'Star Jedi';
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+}

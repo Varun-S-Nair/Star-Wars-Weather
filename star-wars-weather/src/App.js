@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Forecast from "./components/forecast/Forecast.js";
 
 function App() {
 
@@ -60,6 +61,7 @@ function App() {
       <div className="weather-prefix" style={weatherPrefix}>
         -3°C, snow shower?
       </div>
+      <Forecast />
       <div className="prefix" style={prefix}>
         it's like
       </div>

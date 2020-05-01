@@ -9,7 +9,19 @@ body {
   background-size: cover;
   color: black;
   padding: 40px;
-  font-family: 'arial';
+  font-family: 'Star Jedi';
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.Text {
+  background-image: url('backgrounds/Hoth.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  padding: 40px;
+  font-family: 'Star Jedi';
   max-width: 100%;
   overflow-x: hidden;
   text-align: center;

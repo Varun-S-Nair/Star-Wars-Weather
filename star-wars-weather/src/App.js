@@ -1,8 +1,21 @@
 import React from 'react';
 import './App.css';
 import Forecast from "./components/forecast/Forecast.js";
+import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
+
+  var text = {
+    backgroundImage: "url('backgrounds/Hoth.jpg')",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    color: 'black',
+    padding: '40px',
+    fontFamily: 'Arial',
+    maxWidth: '100%',
+    overflowX: 'hidden',
+    textAlign: 'center'
+  };
 
   var weatherPrefix = {
     fontSize: '30px',
@@ -58,26 +71,28 @@ function App() {
 
   return (
     <div className="App">
-      <div className="weather-prefix" style={weatherPrefix}>
-        -3°C, snow shower?
-      </div>
-      <Forecast />
-      <div className="prefix" style={prefix}>
-        it's like
-      </div>
-      <div className="planet" style={planet}>Hoth
+      <div className="text" style={text}>
+        <div className="weather-prefix" style={weatherPrefix}>
+          -3°C, snow shower?
+        </div>
+        <Forecast />
+        <div className="prefix" style={prefix}>
+          it's like
+        </div>
+        <div className="planet" style={planet}>Hoth
 
-      </div>
-      <div className="suffix" style={suffix}>
-        out there.
-      </div>
+        </div>
+        <div className="suffix" style={suffix}>
+          out there.
+        </div>
 
-      <div className="weather-suffix" style={weatherSuffix}>
-        cold, ice, freezing
-      </div>
+        <div className="weather-suffix" style={weatherSuffix}>
+          cold, ice, freezing
+        </div>
 
-      <div className="weather-suffix" style={credits}>
-        thanks to tom scott for the idea
+        <div className="weather-suffix" style={credits}>
+          thanks to tom scott for the idea
+        </div>
       </div>
     </div>
   );

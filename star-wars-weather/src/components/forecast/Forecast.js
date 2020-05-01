@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import Conditions from '../conditions/Conditions.js';
+import 'bootstrap/dist/css/bootstrap.css'
 
 const Forecast = () => {
     let [city, setCity] = useState('');
     let [unit, setUnit] = useState('imperial');
     let [responseObj, setResponseObj] = useState({});
     const uriEncodedCity = encodeURIComponent(city);
+    var position = {
+        padding: '10px',
+        fontSize: '20px',
+        textAlign: 'right',
+        position: 'absolute',
+        top: '0',
+        right: '0',
+        margin: '25px'
+      };
     function getForecast(e) {
         e.preventDefault();
         fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
@@ -25,19 +35,23 @@ const Forecast = () => {
    }
    return (
         <div>
-            <div>
-            <h2>Find Current Weather Conditions</h2>
-            <form onSubmit={getForecast}>
+            <div style={position}>
+            <form onSubmit={getForecast} class="form-group">
+                <div class="form-check form-check-inline">
                 <input
                     type="text"
+                    class="form-control mb-2"
                     placeholder="Enter City"
                     maxLength="50"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     />
+                </div>    
+                <div class="form-check form-check-inline">
                 <label>
                     <input
                         type="radio"
+                        class="form-check-input"
                         name="units"
                         checked={unit === "imperial"}
                         value="imperial"
@@ -45,9 +59,12 @@ const Forecast = () => {
                         />
                     Fahrenheit
                 </label>
+                </div>
+                <div class="form-check form-check-inline">
                 <label>
                     <input
                         type="radio"
+                        class="form-check-input"
                         name="units"
                         checked={unit === "metric"}
                         value="metric"
@@ -55,7 +72,8 @@ const Forecast = () => {
                         />
                     Celsius
                 </label>
-                <button type="submit">Get Forecast</button>
+                </div>
+                <button type="submit" class="btn btn-dark">Get Forecast</button>
             </form>
             <Conditions
                responseObj={responseObj}

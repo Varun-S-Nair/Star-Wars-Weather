@@ -17,30 +17,12 @@ function App() {
     textAlign: 'center'
   };
 
-  var weatherPrefix = {
-    fontSize: '30px',
-    textAlign: 'left',
-    position: 'absolute',
-    top: '0',
-    left: '0',
-    margin: '25px'
-  };
-
   var prefix = {
     fontSize: '30px',
     position: 'absolute',
     textAlign: 'center',
     left: '30%',
     top: '30%'
-  };
-
-  var planet = {
-    fontSize: '100px',
-    position: 'absolute',
-    textAlign: 'center',
-    letterSpacing: '20px',
-    left: '35%',
-    top: '35%'
   };
 
   var suffix = {
@@ -51,47 +33,29 @@ function App() {
     top: '55%'
   };
 
-  var weatherSuffix = {
+  var credits = {
     fontSize: '30px',
     textAlign: 'right',
     position: 'absolute',
     bottom: '0',
     right: '0',
     margin: '25px'
-  };
-
-  var credits = {
-    fontSize: '30px',
-    textAlign: 'right',
-    position: 'absolute',
-    bottom: '0',
-    left: '0',
-    margin: '25px'
   };  
 
   return (
     <div className="App">
       <div className="text" style={text}>
-        <div className="weather-prefix" style={weatherPrefix}>
-          -3°C, snow shower?
-        </div>
         <Forecast />
         <div className="prefix" style={prefix}>
-          it's like
+          It's like
         </div>
-        <div className="planet" style={planet}>Hoth
-
-        </div>
+        
         <div className="suffix" style={suffix}>
           out there.
         </div>
 
-        <div className="weather-suffix" style={weatherSuffix}>
-          cold, ice, freezing
-        </div>
-
-        <div className="weather-suffix" style={credits}>
-          thanks to tom scott for the idea
+        <div className="credits" style={credits}>
+          Thanks to Tom Scott for the idea!
         </div>
       </div>
     </div>

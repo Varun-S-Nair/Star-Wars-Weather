@@ -7,6 +7,7 @@ const Forecast = () => {
     let [unit, setUnit] = useState('imperial');
     let [responseObj, setResponseObj] = useState({});
     const uriEncodedCity = encodeURIComponent(city);
+    
     var position = {
         padding: '10px',
         fontSize: '20px',
@@ -28,11 +29,13 @@ const Forecast = () => {
     .then(response => response.json())
     .then(response => {
         setResponseObj(response)
+        console.log(response)
     })
     .catch(err => {
-        console.log(err);
+        setResponseObj(err)
+        console.log(err)
     });
-   }
+   }    
    return (
         <div>
             <div style={position}>
@@ -75,10 +78,10 @@ const Forecast = () => {
                 </div>
                 <button type="submit" class="btn btn-dark">Get Forecast</button>
             </form>
-            <Conditions
-               responseObj={responseObj}
-               />
             </div>
+            <Conditions
+            responseObj={responseObj}
+            />
         </div>
    )
 }

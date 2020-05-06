@@ -4,7 +4,6 @@ const conditions = (props) => {
     var text = {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        color: 'black',
         padding: '40px',
         fontFamily: 'Arial',
         maxWidth: '100%',
@@ -34,7 +33,7 @@ const conditions = (props) => {
        <div>
            {props.responseObj.cod === 200 ?
             <div className="text" style={text}>
-            <Helmet bodyAttributes={{style: "background-image: url('https://cutewallpaper.org/21/star-wars-hoth-wallpaper/Star-Wars-Battlefront-2015-HD-Wallpaper-Background-Image-.jpg'); background-repeat: no-repeat; background-size: cover;"}} />
+            <Helmet bodyAttributes={{style: "background-image: url('https://cutewallpaper.org/21/star-wars-hoth-wallpaper/Star-Wars-Battlefront-2015-HD-Wallpaper-Background-Image-.jpg'); background-repeat: no-repeat; background-size: cover; color: black;"}} />
             <div className="weather-prefix" style={weatherPrefix}>
                    <p>{Math.round(props.responseObj.main.temp)} degrees, {props.responseObj.weather[0].description}?</p>
             </div>
@@ -44,6 +43,7 @@ const conditions = (props) => {
             </div>
            : 
            <div className="text" style={text}>
+            <Helmet bodyAttributes={{style: "background-image: url('https://wallpapertag.com/wallpaper/full/7/f/e/409705-stars-in-space-background-1920x1080-for-android-40.jpg'); background-repeat: no-repeat; background-size: cover; color: white;"}} />
            <div className="weather-prefix" style={weatherPrefix}>
                    <p>Huh? Try again, or try another city.</p>
             </div>

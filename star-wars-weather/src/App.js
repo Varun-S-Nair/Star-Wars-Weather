@@ -8,7 +8,6 @@ function App() {
   var text = {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    color: 'black',
     padding: '40px',
     fontFamily: 'Arial',
     maxWidth: '100%',

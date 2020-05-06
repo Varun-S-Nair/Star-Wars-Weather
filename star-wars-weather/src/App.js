@@ -36,7 +36,7 @@ function App() {
     textAlign: 'right',
     position: 'absolute',
     bottom: '0',
-    right: '0',
+    left: '0',
     margin: '25px'
   };  
 

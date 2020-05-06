@@ -1,7 +1,6 @@
 import React from 'react';
 const conditions = (props) => {
     var text = {
-        backgroundImage: "url('backgrounds/Hoth.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         color: 'black',

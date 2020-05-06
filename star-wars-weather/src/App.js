@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 function App() {
 
   var text = {
-    backgroundImage: "url('backgrounds/Hoth.jpg')",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     color: 'black',

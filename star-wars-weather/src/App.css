@@ -4,9 +4,6 @@
 }
 
 body {
-  background-image: url('backgrounds/Hoth.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   color: black;
   padding: 40px;
   font-family: 'Star Jedi';

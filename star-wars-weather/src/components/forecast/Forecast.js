@@ -39,22 +39,22 @@ const Forecast = () => {
    return (
         <div>
             <div style={position}>
-            <form onSubmit={getForecast} class="form-group">
-                <div class="form-check form-check-inline">
+            <form onSubmit={getForecast} className="form-group">
+                <div className="form-check form-check-inline">
                 <input
                     type="text"
-                    class="form-control mb-2"
+                    className="form-control mb-2"
                     placeholder="Enter City"
                     maxLength="50"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     />
                 </div>    
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                 <label>
                     <input
                         type="radio"
-                        class="form-check-input"
+                        className="form-check-input"
                         name="units"
                         checked={unit === "imperial"}
                         value="imperial"
@@ -63,11 +63,11 @@ const Forecast = () => {
                     Fahrenheit
                 </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div className="form-check form-check-inline">
                 <label>
                     <input
                         type="radio"
-                        class="form-check-input"
+                        className="form-check-input"
                         name="units"
                         checked={unit === "metric"}
                         value="metric"
@@ -76,7 +76,7 @@ const Forecast = () => {
                     Celsius
                 </label>
                 </div>
-                <button type="submit" class="btn btn-dark">Get Forecast</button>
+                <button type="submit" className="btn btn-dark">Get Forecast</button>
             </form>
             </div>
             <Conditions

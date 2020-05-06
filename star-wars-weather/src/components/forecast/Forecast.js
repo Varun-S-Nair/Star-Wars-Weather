@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const Forecast = () => {
     let [city, setCity] = useState('');
-    let [unit, setUnit] = useState('imperial');
     let [responseObj, setResponseObj] = useState({});
     const uriEncodedCity = encodeURIComponent(city);
     
@@ -19,7 +18,7 @@ const Forecast = () => {
       };
     function getForecast(e) {
         e.preventDefault();
-        fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
+        fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=imperial&q=${uriEncodedCity}`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
@@ -49,33 +48,7 @@ const Forecast = () => {
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     />
-                </div>    
-                <div className="form-check form-check-inline">
-                <label>
-                    <input
-                        type="radio"
-                        className="form-check-input"
-                        name="units"
-                        checked={unit === "imperial"}
-                        value="imperial"
-                        onChange={(e) => setUnit(e.target.value)}
-                        />
-                    Fahrenheit
-                </label>
-                </div>
-                <div className="form-check form-check-inline">
-                <label>
-                    <input
-                        type="radio"
-                        className="form-check-input"
-                        name="units"
-                        checked={unit === "metric"}
-                        value="metric"
-                        onChange={(e) => setUnit(e.target.value)}
-                        />
-                    Celsius
-                </label>
-                </div>
+                </div> 
                 <button type="submit" className="btn btn-dark">Get Forecast</button>
             </form>
             </div>

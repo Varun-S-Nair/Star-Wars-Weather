@@ -7,9 +7,9 @@ function App() {
 
   var text = {
     backgroundRepeat: "no-repeat",
+    fontFamily: "DeeDee",
     backgroundSize: "cover",
     padding: '40px',
-    fontFamily: 'Arial',
     maxWidth: '100%',
     overflowX: 'hidden',
     textAlign: 'center'

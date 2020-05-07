@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Star Jedi';
-  src: url('fonts/star-jedi_[allfont.net].ttf');
+  font-family: 'DeeDee';
+  src: url('fonts/DeeDee.ttf');
 }
 
 body {
   padding: 40px;
-  font-family: 'Star Jedi';
+  font-family: 'DeeDee';
   max-width: 100%;
   overflow-x: hidden;
   text-align: center;

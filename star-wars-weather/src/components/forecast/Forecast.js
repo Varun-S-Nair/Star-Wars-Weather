@@ -9,6 +9,7 @@ const Forecast = () => {
     
     var position = {
         padding: '10px',
+        fontFamily: "DeeDee",
         fontSize: '20px',
         textAlign: 'right',
         position: 'absolute',

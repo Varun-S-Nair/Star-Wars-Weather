@@ -3,9 +3,9 @@ import {Helmet} from 'react-helmet';
 const conditions = (props) => {
     var text = {
         backgroundRepeat: "no-repeat",
+        fontFamily: "DeeDee",
         backgroundSize: "cover",
         padding: '40px',
-        fontFamily: 'Arial',
         maxWidth: '100%',
         overflowX: 'hidden',
         textAlign: 'center'
@@ -47,7 +47,7 @@ const conditions = (props) => {
                    <p>Whew. {Math.round(props.responseObj.main.temp)}°F, {props.responseObj.weather[0].description}?</p>
             </div>
             <div className="planet" style={planet}>
-                   <p>Tatooine</p>
+                   <p>TATOOINE</p>
             </div>
             <div className="weatherSuffix" style={weatherSuffix}>
                    <p>Hot, dry, occasional sarlacc.</p>
@@ -61,7 +61,7 @@ const conditions = (props) => {
                    <p>Ugh. {Math.round(props.responseObj.main.temp)}°F, {props.responseObj.weather[0].description}?</p>
             </div>
             <div className="planet" style={planet}>
-                   <p>Dagobah</p>
+                   <p>DAGOBAH</p>
             </div>
             <div className="weatherSuffix" style={weatherSuffix}>
                    <p>Hot and wet.</p>
@@ -75,7 +75,7 @@ const conditions = (props) => {
                    <p>Wow. {Math.round(props.responseObj.main.temp)}°F, {props.responseObj.weather[0].description}?</p>
             </div>
             <div className="planet" style={planet}>
-                   <p>Kamino</p>
+                   <p>KAMINO</p>
             </div>
             <div className="weatherSuffix" style={weatherSuffix}>
                    <p>Wet.</p>
@@ -89,7 +89,7 @@ const conditions = (props) => {
                    <p>Ahh. {Math.round(props.responseObj.main.temp)}°F, {props.responseObj.weather[0].description}?</p>
             </div>
             <div className="planet" style={planet}>
-                   <p>Yavin 4</p>
+                   <p>YAVIN 4</p>
             </div>
             <div className="weatherSuffix" style={weatherSuffix}>
                    <p>Hot, but some clouds in the sky.</p>
@@ -103,7 +103,7 @@ const conditions = (props) => {
                    <p>Brrr. {Math.round(props.responseObj.main.temp)}°F, {props.responseObj.weather[0].description}?</p>
             </div>
             <div className="planet" style={planet}>
-                   <p>Hoth</p>
+                   <p>HOTH</p>
             </div>
             <div className="weatherSuffix" style={weatherSuffix}>
                    <p>Cold, ice, freezing desolation.</p>
@@ -117,7 +117,7 @@ const conditions = (props) => {
                     <p>Hmm. {Math.round(props.responseObj.main.temp)}°F, {props.responseObj.weather[0].description}?</p>
              </div>
              <div className="planet" style={planet}>
-                    <p>Endor</p>
+                    <p>ENDOR</p>
              </div>
              <div className="weatherSuffix" style={weatherSuffix}>
                     <p>Temperate, grey, and cloudy.</p>
@@ -131,7 +131,7 @@ const conditions = (props) => {
                    <p>Oh. {Math.round(props.responseObj.main.temp)}°F, {props.responseObj.weather[0].description}?</p>
             </div>
             <div className="planet" style={planet}>
-                   <p>Naboo</p>
+                   <p>NABOO</p>
             </div>
             <div className="weatherSuffix" style={weatherSuffix}>
                    <p>Temperate, dry, and pleasant.</p>
@@ -144,7 +144,7 @@ const conditions = (props) => {
                    <p>Huh? Try again later, or try another city.</p>
             </div>
             <div className="planet" style={planet}>
-                   <p>Alderaan</p>
+                   <p>ALDERAAN</p>
             </div>
             <div className="weatherSuffix" style={weatherSuffix}>
                    <p>Try again later, or try another city.</p>
